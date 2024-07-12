@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ITE SWITCHBOARD| Switchboard_Multi-User</title>
+    <title>ITE | ENDURA COLLAB</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
@@ -22,19 +22,19 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <button id="entervr" value="Enter VR" disabled>VR MODE</button>
-        <div id="unity-build-title">Switchboard_Multi-User</div>
+        <div id="unity-build-title">ENDURA COLLAB</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build_Student.loader.js";
+      var loaderUrl = buildUrl + "/Build_Endura_.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build_Student.data",
-        frameworkUrl: buildUrl + "/Build_Student.framework.js",
-        codeUrl: buildUrl + "/Build_Student.wasm",
+        dataUrl: buildUrl + "/Build_Endura_.data",
+        frameworkUrl: buildUrl + "/Build_Endura_.framework.js",
+        codeUrl: buildUrl + "/Build_Endura_.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ITE",
-        productName: "Switchboard_Multi-User",
+        productName: "ENDURA COLLAB",
         productVersion: "0.1",
       };
 
@@ -47,8 +47,8 @@
       var unityInstance = null;
       
 
-      canvasContainer.style.width = "1280px";
-      canvasContainer.style.height = "720px";
+      canvasContainer.style.width = "1600px";
+      canvasContainer.style.height = "900px";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
@@ -87,16 +87,13 @@
 	  /*
 	  window.onbeforeunload = function(event){
 		event.returnValue = "ARE YOU SURE YOU WANT TO QUIT?";
-	  };
-	  */
-	   
+	  };*/
 	  
 	  function ExitSession(){
 		unityInstance.SendMessage("BrowserCloser", "CloseObject");
 	  }
 	  	  
 	  window.onunload = ExitSession;
-	  
 	    
     </script>
   </body>

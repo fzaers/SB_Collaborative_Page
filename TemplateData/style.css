@@ -1,4 +1,8 @@
-body {padding: 0; margin: 0 }
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #3F3F3F
+}
 #unity-container { position: absolute }
 #unity-container { left: 50%; top: 50%; transform: translate(-50%, -50%) }
 #unity-canvas { background: #231F20 }
@@ -8,7 +12,7 @@ body {padding: 0; margin: 0 }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
 #unity-footer { position: relative}
 #unity-webgl-logo { float:left; width: 50px; height: 50px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { float: left; margin-left: 10px; line-height: 50px; font-family: arial; font-size: 18px; font-weight : 100 }
+#unity-build-title { float: left; margin-left: 10px; line-height: 50px; font-family: arial; font-size: 18px; font-weight : 100; color: white }
 #unity-fullscreen-button { float: right; width: 50px; height: 50px; background: url('fullscreen-button.png') no-repeat center }
 #unity-webxr-link { float: left; margin-right: 50px; line-height: 50px; font-family: arial; font-size: 50px }
 #entervr:enabled { float: right; width: 60px; height: 50px; background-color: #1eaed3; display: inline-block; border: 0; }
